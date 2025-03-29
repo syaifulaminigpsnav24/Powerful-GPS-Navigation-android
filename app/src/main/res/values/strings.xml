@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Powerful GPS Navigation</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="manage_maps">Manage Maps</string>
+    <string name="settings">Settings</string>
+    <string name="help_and_feedback">Help and Feedback</string>
+    <string name="type_location_address_here">Type location address here. then, click \'SEARCH\' button to view address results</string>
+    <string name="search">Search</string>
+    <string name="get_directions">Get Directions</string>
+    <string name="calculating_route" tools:ignore="TypographyEllipsis">Calculating route...</string>
+    <string name="calculating_alternative_route" tools:ignore="TypographyEllipsis">Calculating alternative route...</string>
+    <string name="demo">Demo</string>
+    <string name="start_navigation">Start Navigation</string>
+    <string name="place_information">Place Information</string>
+    <string name="search_navigate_to">Search/Navigate To?</string>
+    <string name="powerful_gps_navigation">Powerful GPS Navigation</string>
+    <string name="aminisyaiful_powerfulnav24_gmail_com">aminisyaiful.powerfulnav24@gmail.com</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NavigationLocationLayerStyle" parent="@style/maplibre_LocationComponent">
+        <item name="maplibre_trackingAnimationDurationMultiplier">2.0</item>
+        <item name="maplibre_trackingGesturesManagement">false</item>
+    </style>
+
+    <item name="maplibre_enableStaleState" type="bool">true</item>
+    <item name="maplibre_staleStateTimeout" type="integer">0.25</item>
+
+    <string name="maplibre_attributionsDialogTitle">Powerful GPS Navigation &amp; Maps for Android</string>
+</resources>

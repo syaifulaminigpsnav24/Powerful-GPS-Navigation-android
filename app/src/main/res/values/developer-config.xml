@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Your navigation base url (example: https://api.mapbox.com) (-->
+    <string name="base_url" translatable="false">https://api.mapbox.com</string>
+    <!-- Your Mapbox access token (example: pk.abc...) -->
+    <string name="mapbox_access_token" translatable="false">pk.eyJ1IjoieG55b3NncHNuYXYxIiwiYSI6ImNtNm1hNGQxazBoMGEya3B4MHlmbmh6b2oifQ.hwe-1eJlG5Ra-_vtxfMuuw</string>
+    <!-- Map tile provider for light design (example: https://api.maptiler.com/maps/basic-v2/style.json?key=...) -->
+    <string name="map_style_light" translatable="false">asset://sygic_map_style_day.json</string>
+    <!-- Map tile provider for dark design (example: "https://api.maptiler.com/maps/basic-v2-dark/style.json?key=...) -->
+    <string name="map_style_dark" translatable="false">asset://sygic_map_style_night.json</string>
+</resources>

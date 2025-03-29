@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single"
+        android:enabled="false">
+        <item
+            android:id="@+id/nav_manage_map"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="Manage Maps" />
+        <item
+            android:id="@+id/nav_hud"
+            android:icon="@drawable/ic_dashboard_menu_hud"
+            android:title="Head Up Display" />
+        <item
+            android:id="@+id/nav_cockpit"
+            android:icon="@drawable/ic_dashboard_menu_cockpit"
+            android:title="Cockpit" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="About" />
+    </group>
+</menu>

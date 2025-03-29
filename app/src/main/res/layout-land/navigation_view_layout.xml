@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/navigationMapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:maplibre_uiAttribution="true"
+        app:maplibre_uiAttributionMarginLeft="2.5dp"
+        app:maplibre_uiLogo="false"
+        app:maplibre_uiCompass="false"/>
+
+    <ImageView
+        android:id="@+id/screenshotView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
+
+    <com.mapbox.services.android.navigation.ui.v5.summary.SummaryBottomSheet
+        android:id="@+id/summaryBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"/>
+
+    <com.mapbox.services.android.navigation.ui.v5.RecenterButton
+        android:id="@+id/recenterBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="16dp"
+        android:visibility="invisible"
+        app:layout_anchor="@id/summaryBottomSheet"
+        app:layout_anchorGravity="top|left"/>
+
+    <com.mapbox.services.android.navigation.ui.v5.map.WayNameView
+        android:id="@+id/wayNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:visibility="invisible"
+        app:layout_anchor="@id/summaryBottomSheet"
+        app:layout_anchorGravity="center|top"/>
+
+    <com.mapbox.services.android.navigation.ui.v5.instruction.InstructionView
+        android:id="@+id/instructionView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="16.2dp"
+        android:orientation="vertical">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:id="@+id/navigation_speed"
+            android:name="id.powerfulgpsnavigation.maps.NavigationSpeedometerUI" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
