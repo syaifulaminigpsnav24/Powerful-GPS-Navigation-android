@@ -163,7 +163,12 @@ class MapActivity : AppCompatActivity(), LocationListener {
 
         onBackPressedDispatcher.addCallback(this,onBackPressedCallbackToExitApp)
 
-        val styleUrl = "asset://sygic_map_style_day.json"
+        val key = "C975JZ2tW8Fxe2xPdPzz"
+
+        // Find other maps in https://cloud.maptiler.com/maps/
+        val mapId = "streets-v2"
+
+        val styleUrl = "https://api.maptiler.com/maps/$mapId/style.json?key=$key"
 
         // Init MapLibre
         Mapbox.getInstance(this)
