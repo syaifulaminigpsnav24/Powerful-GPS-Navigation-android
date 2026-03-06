@@ -5,7 +5,7 @@
     <!-- Your Mapbox access token (example: pk.abc...) -->
     <string name="mapbox_access_token" translatable="false">pk.eyJ1IjoieG55b3NncHNuYXYxIiwiYSI6ImNtNm1hNGQxazBoMGEya3B4MHlmbmh6b2oifQ.hwe-1eJlG5Ra-_vtxfMuuw</string>
     <!-- Map tile provider for light design (example: https://api.maptiler.com/maps/basic-v2/style.json?key=...) -->
-    <string name="map_style_light" translatable="false">https://api.maptiler.com/maps/streets-v2/style.json?key=C975JZ2tW8Fxe2xPdPzz</string>
+    <string name="map_style_light" translatable="false">asset://maps/style/syaiful_amini_user_mapstyle_source_sygic-map-style-day.json</string>
     <!-- Map tile provider for dark design (example: "https://api.maptiler.com/maps/basic-v2-dark/style.json?key=...) -->
-    <string name="map_style_dark" translatable="false">https://api.maptiler.com/maps/streets-v2-dark/style.json?key=C975JZ2tW8Fxe2xPdPzz</string>
+    <string name="map_style_dark" translatable="false">asset://maps/style/syaiful_amini_user_mapstyle_source_sygic-map-style-night.json</string>
 </resources>

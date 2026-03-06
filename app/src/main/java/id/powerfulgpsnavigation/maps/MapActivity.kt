@@ -104,7 +104,7 @@ class MapActivity : AppCompatActivity(), LocationListener {
     private lateinit var rowAddress: View
     private lateinit var addressLine: TextView
 
-    // Declare a Address Coordinates
+    // Declare an Address Coordinates
     private var latitude by Delegates.notNull<Double>()
     private var longitude by Delegates.notNull<Double>()
 
@@ -168,7 +168,7 @@ class MapActivity : AppCompatActivity(), LocationListener {
         // Find other maps in https://cloud.maptiler.com/maps/
         val mapId = "streets-v2"
 
-        val styleUrl = "https://api.maptiler.com/maps/$mapId/style.json?key=$key"
+        val styleUrl = "asset://maps/style/syaiful_amini_user_mapstyle_source_sygic-map-style-day.json"
 
         // Init MapLibre
         Mapbox.getInstance(this)
@@ -246,6 +246,7 @@ class MapActivity : AppCompatActivity(), LocationListener {
             navigationMapRoute = NavigationMapRoute(mapView, map)
 
             maplibreMap.setStyle(styleUrl) { style: Style ->
+
                 locationComponent = maplibreMap.locationComponent
                 val locationComponentOptions =
                     LocationComponentOptions.builder(this@MapActivity)
@@ -547,7 +548,7 @@ class MapActivity : AppCompatActivity(), LocationListener {
 
     private val onBackPressedCallbackToExitApp = object : OnBackPressedCallback(true) {
         override fun handleOnBackPressed() {
-            //showing dialog and then closing the application..
+            //showing dialog and then closing the application
             exitApp()
         }
     }
@@ -564,14 +565,14 @@ class MapActivity : AppCompatActivity(), LocationListener {
 
     private val onBackPressedCallback = object : OnBackPressedCallback(true) {
         override fun handleOnBackPressed() {
-            //showing dialog and then closing the application..
+            //showing dialog and then closing the application
             backToMap()
         }
     }
 
     private val onBackPressedCallbackToSearchList = object : OnBackPressedCallback(true) {
         override fun handleOnBackPressed() {
-            //showing dialog and then closing the application..
+            //showing dialog and then closing the application
             backToSearchList()
         }
     }
@@ -624,7 +625,7 @@ class MapActivity : AppCompatActivity(), LocationListener {
 
     private val onBackPressedCallbackToCancelRoute = object : OnBackPressedCallback(true) {
         override fun handleOnBackPressed() {
-            //showing dialog and then closing the application..
+            //showing dialog and then closing the application
             cancelRoute()
         }
     }
